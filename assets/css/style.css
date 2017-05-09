@@ -256,7 +256,7 @@ input[type=submit] {
     }d
 }
 
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
     section.sidebar {
         float: left;
     }
