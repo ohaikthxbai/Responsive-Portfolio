@@ -1,63 +1,21 @@
-/* mobile responsiveness */
-    
-    @media screen and (max-width: 980px) {
-       #masthead {
-        position: fixed;
-        z-index: 99;
-        width: 100%;
-        margin: 0 0 30px;
-        overflow: auto;
-        color: #fff;
-        background: #fff;
-        border-bottom: 2px solid #ccc;
-    } 
-      /*#logo {
-        float: left;
-        width: 100%;
-        height: 90px;
-        font-family: Georgia, Times, "Times New Roman", serif;
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 90px;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        background: #4aaaa5;
-      }
-      nav {
-        float: none;
-        text-align: center;
-        margin-top: 25px;
-      } 
-      nav a {
-        display: inline-block;
-        line-height: 18px;
-        color: #999;
-        text-decoration: none;
-        border-left: 1px solid #efefef;
-      }
-      nav a:first-child {
-        border-left: 0 none;
-      } */
-      }
+    /* mobile responsiveness */
 
-    @media screen and (max-width: 768px) {
-   
-    #main-container {
-        padding-top: 0px /* updated to removed extra space */
-    }
-      
+
+/* - - - - - -  980PX & BELOW - - - - - - - */
+
+@media screen and (max-width: 980px) {
     .main-section {
         float: left;
         width: 100%;
-        max-width: 730px; /* updated to fit page */
+        max-width: 700px;
+        /* updated to fit page */
         padding: 30px;
-        margin: 0px 20px 40px 20px; /* updated */
+        margin: 0px 20px 40px 20px;
+        /* updated */
         background: #fff;
         border: 1px solid #ddd;
     }
-
-       #masthead {
+    #masthead {
         position: static;
         z-index: 99;
         width: 100%;
@@ -67,79 +25,88 @@
         background: #fff;
         border-bottom: 2px solid #ccc;
     }
-
-       #logo {
-        margin-left: 20px;
-    } 
-
-      nav {
+    #logo {
+        margin-left: 100px;
+        /* added */
+    }
+    nav {
         float: right;
         margin-top: 25px;
-        margin-right: 25px; /* added */
-      }
-      nav a {
+        margin-right: 100px;
+        /* added */
+    }
+    nav a {
         display: inline-block;
         line-height: 18px;
         color: #999;
         text-decoration: none;
         border-left: 1px solid #efefef;
-      }
-      nav a:first-child {
+    }
+    nav a:first-child {
         border-left: 0 none;
-      }
-
-            /* sidebar */
-      .sidebar {
+    }
+    #main-container {
+        padding-top: 0px/* updated to removed extra space */
+    }    
+    .main-section {
         float: left;
         width: 100%;
-        max-width: 720px; /*changed from 270px */
+        max-width: 450px;
+        /* updated to fit page */
         padding: 30px;
-        margin-left: 20px; /* added */
+        margin: 0px 0px 40px 100px;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+    .auth-image {
+        float: left;
+        width: 21.5em;
+        /* for resizing w/o quality loss: css-tricks */
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* added */
+    }
+    /* sidebar */
+    .sidebar {
+        float: right;
+        width: 100%;
+        max-width: 270px;
+        padding: 30px;
+        margin-right: 100px;
         margin-bottom: 40px;
         background: #fff;
         border: 1px solid #ddd;
     }
-        /* portfolio */
-
-      .work {
+    /* portfolio */
+    .work {
         position: relative;
         float: left;
-        margin: 10px 0px 5px 30px;
+        width: 100%;
+        /*need this*/
+        margin: 10px 0px 5px 0px;
         overflow: auto;
-    } 
-
     }
 
-    @media screen and (max-width: 640px) {
-      /* main */
-    
+/* - - - - - -  768PX & BELOW - - - - - - - */
+
+@media screen and (max-width: 768px) {
     #main-container {
-        padding-top: 0px /* updated to removed extra space */
+        padding-top: 0px/* updated to removed extra space */
     }
-    
     .main-section {
         float: left;
         width: 100%;
-        max-width: 600px; /* updated to fit page */
+        max-width: 730px;
+        /* updated to fit page */
         padding: 30px;
         margin: 0px 20px 40px 20px;
+        /* updated */
         background: #fff;
         border: 1px solid #ddd;
     }
-
-    .auth-image {
-        float: left;
-        width: 30em; /* for resizing w/o quality loss: css-tricks */
-        height: auto;
-        margin-top: 10px;
-        margin-right: 25px;
-        margin-bottom: 20px; /* added */
-    }
-      
-        /* header */
-
-       #masthead {
-        position: static; /* changed according to hw instructions */
+    #masthead {
+        position: static;
         z-index: 99;
         width: 100%;
         margin: 0 0 30px;
@@ -148,9 +115,93 @@
         background: #fff;
         border-bottom: 2px solid #ccc;
     }
-      #logo {
+    #logo {
+        margin-left: 20px;
+        /* added */
+    }
+    nav {
+        float: right;
+        margin-top: 25px;
+        margin-right: 25px;
+        /* added */
+    }
+    nav a {
+        display: inline-block;
+        line-height: 18px;
+        color: #999;
+        text-decoration: none;
+        border-left: 1px solid #efefef;
+    }
+    nav a:first-child {
+        border-left: 0 none;
+    }
+    /* sidebar */
+    .sidebar {
         float: left;
-        width: 100%; /* changed to fill row */ 
+        width: 100%;
+        max-width: 720px;
+        /*changed from 270px */
+        padding: 30px;
+        margin-left: 20px;
+        /* added */
+        margin-bottom: 40px;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+    /* portfolio */
+    .work {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: 10px 0px 5px 0px;
+        overflow: auto;
+    }
+}
+
+
+/* - - - - - -  640PX & BELOW - - - - - - - */
+
+@media screen and (max-width: 640px) {
+    /* main */
+    #main-container {
+        padding-top: 0px/* updated to removed extra space */
+    }
+    .main-section {
+        float: left;
+        width: 100%;
+        max-width: 600px;
+        /* updated to fit page */
+        padding: 30px;
+        margin: 0px 20px 40px 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+    .auth-image {
+        float: left;
+        width: 30em;
+        /* for resizing w/o quality loss: css-tricks */
+        height: auto;
+        margin-top: 10px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        /* added */
+    }
+    /* header */
+    #masthead {
+        position: static;
+        /* changed according to hw instructions */
+        z-index: 99;
+        width: 100%;
+        margin: 0 0 30px;
+        overflow: auto;
+        color: #fff;
+        background: #fff;
+        border-bottom: 2px solid #ccc;
+    }
+    #logo {
+        float: left;
+        width: 100%;
+        /* changed to fill row */
         height: 90px;
         font-family: Georgia, Times, "Times New Roman", serif;
         font-size: 35px;
@@ -160,52 +211,54 @@
         text-align: center;
         text-decoration: none;
         background: #4aaaa5;
-        margin-left: 0; /* removed white area */
-      }
-      nav {
+        margin-left: 0;
+        /* removed white area */
+    }
+    nav {
         float: none;
         text-align: center;
-        margin-top: 0px; /* removes white space on top */
-      }
-      nav a {
+        margin-top: 0px;
+        /* removes white space on top */
+    }
+    nav a {
         display: inline-block;
         line-height: 18px;
         color: #999;
         text-decoration: none;
         border-left: 1px solid #efefef;
-        padding: 0 50px; /* spacing updated */
-      }
-      nav a:first-child {
-        padding: 20px 50px; /* spacing update */
+        padding: 0 50px;
+        /* spacing updated */
+    }
+    nav a:first-child {
+        padding: 20px 50px;
+        /* spacing update */
         border-left: 0 none;
-      }
-
-      /* sidebar */
-      .sidebar {
+    }
+    /* sidebar */
+    .sidebar {
         float: left;
         width: 100%;
-        max-width: 600px; /*changed from 270px */
+        max-width: 600px;
+        /*changed from 270px */
         padding: 30px;
-        margin-left: 20px; /* added */
+        margin-left: 20px;
+        /* added */
         margin-bottom: 40px;
         background: #fff;
         border: 1px solid #ddd;
     }
-
-      /* portfolio */
-
-      .work {
+    /* portfolio */
+    .work {
         position: relative;
         float: left;
-        width: 100%; /* updated from px to full width to display image */
+        width: 100%;
+        /* updated from px to full width to display image */
         margin: 20px 0 25px;
         overflow: auto;
     }
-
-      .work img {
-        width: 30em; /* updated */
+    .work img {
+        width: 30em;
+        /* updated */
         border: 0 none;
         opacity: 0.8;
     }
-
-
