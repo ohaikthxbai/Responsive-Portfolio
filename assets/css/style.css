@@ -186,7 +186,7 @@
     
     .auth-image {
         float: left;
-        width: 200px;
+        width: 15em; /* for resizing without losing quality -- css-tricks.com */
         height: auto;
         margin-top: 10px;
         margin-right: 25px;
@@ -321,10 +321,10 @@
     }
 
     @media screen and (max-width: 640px) {
-    /* main */
+      /* main */
     
     #main-container {
-        padding-top: 130px;
+        padding-top: 0px
     }
     
     .main-section {
@@ -332,15 +332,24 @@
         width: 100%;
         max-width: 600px;
         padding: 30px;
-        margin: 40px 20px;
+        margin: 0px 20px 40px 20px;
         background: #fff;
         border: 1px solid #ddd;
+    }
+
+    .auth-image {
+        float: left;
+        width: 30em; /* for resizing w/o quality loss: css-tricks */
+        height: auto;
+        margin-top: 10px;
+        margin-right: 25px;
+        margin-bottom: 20px; /* added */
     }
       
         /* header */
 
        #masthead {
-        position: fixed;
+        position: static; /* changed according to hw instructions */
         z-index: 99;
         width: 100%;
         margin: 0 0 30px;
@@ -351,7 +360,7 @@
     }
       #logo {
         float: left;
-        width: 100%;
+        width: 100%; /* changed to fill row */ 
         height: 90px;
         font-family: Georgia, Times, "Times New Roman", serif;
         font-size: 35px;
@@ -365,7 +374,7 @@
       nav {
         float: none;
         text-align: center;
-        margin-top: 0px;
+        margin-top: 0px; /* removes white space on top */
       }
       nav a {
         display: inline-block;
@@ -373,9 +382,10 @@
         color: #999;
         text-decoration: none;
         border-left: 1px solid #efefef;
+        padding: 0 50px; /* spacing updated */
       }
       nav a:first-child {
-        padding: 20px 0;
+        padding: 20px 50px; /* spacing update */
         border-left: 0 none;
       }
 
@@ -383,9 +393,9 @@
       .sidebar {
         float: left;
         width: 100%;
-        max-width: 600px;
+        max-width: 600px; /*changed from 270px */
         padding: 30px;
-        margin-left: 20px;
+        margin-left: 20px; /* added */
         margin-bottom: 40px;
         background: #fff;
         border: 1px solid #ddd;
